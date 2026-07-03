@@ -71,3 +71,45 @@ input, textarea, select { width: 100%; margin-top: 7px; padding: 13px 14px; bord
   .footer-grid { display: block; }
   .footer a { display: block; margin: 12px 0 0; }
 }
+
+
+/* Fleetpoint Africa tools */
+.tools { background: var(--white); }
+.section-intro { color: var(--muted); max-width: 720px; margin-top: -8px; }
+.tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.tool-card { background: var(--light); border: 1px solid var(--line); border-radius: 28px; padding: 28px; box-shadow: 0 16px 40px rgba(15,23,42,.07); }
+.tool-header p { color: var(--muted); margin-top: 0; }
+.tool-label { display: inline-block; background: var(--navy); color: var(--gold); font-weight: 900; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; padding: 7px 10px; border-radius: 999px; margin-bottom: 12px; }
+.form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.form-grid.compact label { font-size: 13px; }
+.results-panel { display: grid; gap: 12px; margin-top: 22px; }
+.results-panel div { display: flex; justify-content: space-between; align-items: center; gap: 16px; background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 15px 16px; }
+.results-panel span { color: var(--muted); font-weight: 800; }
+.results-panel strong { color: var(--blue); font-size: 22px; }
+.tool-note { color: var(--muted); font-size: 13px; margin-bottom: 0; }
+.kpi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 22px; }
+.kpi-card { background: var(--white); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+.kpi-card span { display: block; color: var(--muted); font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: .06em; }
+.kpi-card strong { display: block; color: var(--navy); font-size: 30px; line-height: 1.1; margin: 8px 0 4px; }
+.kpi-card small { color: var(--blue); font-weight: 800; }
+.dashboard-summary { margin-top: 18px; background: var(--navy); color: var(--white); border-radius: 18px; padding: 18px; font-weight: 700; }
+@media (max-width: 850px) {
+  .tool-grid, .form-grid, .kpi-grid { grid-template-columns: 1fr; }
+}
+
+
+/* Free Fleet Health Check */
+.health-check { background: var(--light); }
+.health-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px; align-items: start; }
+.health-form { display: grid; gap: 14px; background: var(--white); border: 1px solid var(--line); border-radius: 28px; padding: 28px; box-shadow: 0 16px 40px rgba(15,23,42,.06); }
+.health-result { position: sticky; top: 96px; background: var(--navy); color: var(--white); border-radius: 28px; padding: 30px; box-shadow: 0 18px 50px rgba(15,23,42,.18); }
+.health-result h3 { color: var(--white); }
+.health-result p { color: #d8e6f5; }
+.score-circle { width: 190px; height: 190px; border-radius: 50%; display: grid; place-items: center; text-align: center; margin: 22px 0; background: conic-gradient(var(--gold) 0deg, rgba(255,255,255,.14) 0deg); border: 1px solid rgba(255,255,255,.18); }
+.score-circle strong { display: block; color: var(--white); font-size: 44px; line-height: 1; }
+.score-circle span { display: block; color: #d8e6f5; font-weight: 800; font-size: 13px; margin-top: 8px; }
+.health-result .btn { margin: 10px 0 14px; }
+@media (max-width: 850px) {
+  .health-grid { grid-template-columns: 1fr; }
+  .health-result { position: static; }
+}

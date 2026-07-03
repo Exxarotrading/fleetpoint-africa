@@ -23,6 +23,8 @@
         <a href="#services">Services</a>
         <a href="#industries">Industries</a>
         <a href="#process">Process</a>
+        <a href="#health-check">Free Health Check</a>
+        <a href="#tools">Tools</a>
         <a href="#contact">Contact</a>
         <a class="nav-cta" href="#contact">Request Assessment</a>
       </div>
@@ -129,6 +131,143 @@
           <div class="price-card"><h3>Fleet Health Check</h3><p class="price">Once-off</p><p>Best for companies that need a clear picture of current fleet risks and cost leakages.</p></div>
           <div class="price-card featured"><h3>Monthly Fleet Support</h3><p class="price">Retainer</p><p>Best for ongoing licensing, fines, reporting, driver monitoring, and compliance support.</p></div>
           <div class="price-card"><h3>Full Fleet Structuring</h3><p class="price">Project</p><p>Best for companies that need policies, SOPs, reporting, team structure, and controls built from the ground up.</p></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="health-check" class="section health-check">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Free Fleet Health Check</p>
+          <h2>Get a quick view of where your fleet may be leaking money or carrying risk.</h2>
+          <p class="section-intro">Answer a few basic questions and get an instant Fleetpoint Africa readiness score. This is a simple preview before a proper fleet assessment.</p>
+        </div>
+
+        <div class="health-grid">
+          <form class="health-form" id="healthCheckForm">
+            <label>Do you have an updated fleet asset register?
+              <select class="health-answer" data-weight="14">
+                <option value="0">No</option>
+                <option value="0.5">Partially</option>
+                <option value="1">Yes</option>
+              </select>
+            </label>
+            <label>Are licences, COFs and renewals tracked before expiry?
+              <select class="health-answer" data-weight="16">
+                <option value="0">No</option>
+                <option value="0.5">Partially</option>
+                <option value="1">Yes</option>
+              </select>
+            </label>
+            <label>Do you review fuel spend and abnormal consumption monthly?
+              <select class="health-answer" data-weight="16">
+                <option value="0">No</option>
+                <option value="0.5">Partially</option>
+                <option value="1">Yes</option>
+              </select>
+            </label>
+            <label>Are traffic fines allocated to drivers and reported?
+              <select class="health-answer" data-weight="12">
+                <option value="0">No</option>
+                <option value="0.5">Partially</option>
+                <option value="1">Yes</option>
+              </select>
+            </label>
+            <label>Do drivers have scorecards or behaviour controls?
+              <select class="health-answer" data-weight="14">
+                <option value="0">No</option>
+                <option value="0.5">Partially</option>
+                <option value="1">Yes</option>
+              </select>
+            </label>
+            <label>Are repairs, tyres and suppliers reviewed against cost trends?
+              <select class="health-answer" data-weight="14">
+                <option value="0">No</option>
+                <option value="0.5">Partially</option>
+                <option value="1">Yes</option>
+              </select>
+            </label>
+            <label>Do you have monthly fleet reports for management?
+              <select class="health-answer" data-weight="14">
+                <option value="0">No</option>
+                <option value="0.5">Partially</option>
+                <option value="1">Yes</option>
+              </select>
+            </label>
+          </form>
+
+          <aside class="health-result">
+            <span class="tool-label">Instant Result</span>
+            <div class="score-circle"><strong id="healthScore">0%</strong><span>Fleet Readiness</span></div>
+            <h3 id="healthStatus">High-risk fleet setup</h3>
+            <p id="healthAdvice">Your fleet may need urgent structure around compliance, fuel, fines, reporting and driver accountability.</p>
+            <a class="btn primary" href="#contact">Request a Full Fleet Assessment</a>
+            <p class="tool-note">The full assessment gives a practical report with cost leakages, compliance risks, quick wins and implementation priorities.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="tools" class="section tools">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Fleet Tools</p>
+          <h2>Estimate savings and track the fleet KPIs that matter.</h2>
+          <p class="section-intro">Use these tools to start the conversation with measurable numbers. They are designed for quick internal reviews and consultation enquiries.</p>
+        </div>
+
+        <div class="tool-grid">
+          <article class="tool-card calculator-card">
+            <div class="tool-header">
+              <span class="tool-label">Cost Saving Calculator</span>
+              <h3>Monthly Fleet Savings Estimate</h3>
+              <p>Estimate possible savings from improved fuel control, driver behaviour, maintenance planning, fines management, and supplier reviews.</p>
+            </div>
+
+            <div class="form-grid compact">
+              <label>Monthly fuel spend (R)<input id="fuelSpend" type="number" min="0" value="120000"></label>
+              <label>Monthly repairs & maintenance (R)<input id="maintenanceSpend" type="number" min="0" value="65000"></label>
+              <label>Monthly tyre spend (R)<input id="tyreSpend" type="number" min="0" value="18000"></label>
+              <label>Monthly fines/admin losses (R)<input id="fineSpend" type="number" min="0" value="7500"></label>
+              <label>Fuel saving target (%)<input id="fuelSaving" type="number" min="0" max="50" value="8"></label>
+              <label>Maintenance saving target (%)<input id="maintenanceSaving" type="number" min="0" max="50" value="10"></label>
+            </div>
+
+            <div class="results-panel">
+              <div><span>Estimated monthly saving</span><strong id="monthlySaving">R0</strong></div>
+              <div><span>Estimated annual saving</span><strong id="annualSaving">R0</strong></div>
+              <div><span>Current monthly fleet cost reviewed</span><strong id="reviewedSpend">R0</strong></div>
+            </div>
+            <p class="tool-note">This is an estimate only. A proper Fleetpoint Africa assessment validates spend, usage, suppliers, controls, and driver behaviour before final recommendations.</p>
+          </article>
+
+          <article class="tool-card dashboard-card">
+            <div class="tool-header">
+              <span class="tool-label">Fleet KPI Dashboard</span>
+              <h3>Quick Performance Snapshot</h3>
+              <p>Enter basic fleet figures to generate a simple KPI view for management discussions.</p>
+            </div>
+
+            <div class="form-grid compact">
+              <label>Total fleet size<input id="fleetSize" type="number" min="1" value="35"></label>
+              <label>Vehicles available today<input id="availableVehicles" type="number" min="0" value="30"></label>
+              <label>Monthly kilometres<input id="monthlyKm" type="number" min="0" value="85000"></label>
+              <label>Monthly fuel litres<input id="fuelLitres" type="number" min="0" value="14000"></label>
+              <label>Open fines<input id="openFines" type="number" min="0" value="18"></label>
+              <label>Expired/near-expiry items<input id="expiryItems" type="number" min="0" value="6"></label>
+            </div>
+
+            <div class="kpi-grid">
+              <div class="kpi-card"><span>Fleet Availability</span><strong id="availabilityKpi">0%</strong><small id="availabilityStatus">--</small></div>
+              <div class="kpi-card"><span>Fuel Efficiency</span><strong id="fuelEfficiencyKpi">0 km/L</strong><small id="fuelStatus">--</small></div>
+              <div class="kpi-card"><span>Fine Exposure</span><strong id="fineKpi">0</strong><small>open fines</small></div>
+              <div class="kpi-card"><span>Compliance Risk</span><strong id="complianceKpi">0</strong><small>items needing action</small></div>
+            </div>
+
+            <div class="dashboard-summary" id="dashboardSummary">Update the figures to see your fleet snapshot.</div>
+          </article>
         </div>
       </div>
     </section>
