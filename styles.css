@@ -113,3 +113,10 @@ input, textarea, select { width: 100%; margin-top: 7px; padding: 13px 14px; bord
   .health-grid { grid-template-columns: 1fr; }
   .health-result { position: static; }
 }
+.brand-logo {
+  display: block;
+  height: 48px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+}
