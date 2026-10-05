@@ -120,12 +120,17 @@ input, textarea, select { width: 100%; margin-top: 7px; padding: 13px 14px; bord
   max-width: 220px;
   object-fit: contain;
 }
-@media (min-width: 851px) {
-  .brand-logo {
-    height: 88px;
-    max-width: 320px;
+@media only screen and (min-width: 851px) {
+  .site-header .nav .brand-logo {
+    height: 95px !important;
+    width: auto !important;
+    max-width: 320px !important;
   }
 
+  .site-header .nav {
+    height: 120px !important;
+  }
+}
   .nav {
     height: 112px;
   }
