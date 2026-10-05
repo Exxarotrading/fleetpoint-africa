@@ -122,11 +122,11 @@ input, textarea, select { width: 100%; margin-top: 7px; padding: 13px 14px; bord
 }
 @media (min-width: 851px) {
   .brand-logo {
-    height: 60px;
-    max-width: 270px;
+    height: 88px;
+    max-width: 320px;
   }
 
   .nav {
-    height: 88px;
+    height: 112px;
   }
 }
