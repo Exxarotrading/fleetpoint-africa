@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://fleetpointafrica.co.za/sitemap.xml
