@@ -135,3 +135,14 @@ input, textarea, select { width: 100%; margin-top: 7px; padding: 13px 14px; bord
     height: 112px;
   }
 }
+.portal-cta {
+  background: #c6a15b !important;
+  color: #101c32 !important;
+  border: 1px solid #c6a15b;
+  font-weight: 700;
+}
+
+.portal-cta:hover {
+  background: transparent !important;
+  color: #c6a15b !important;
+}
